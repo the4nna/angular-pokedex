@@ -1,4 +1,6 @@
+<img src="https://i.pinimg.com/originals/bd/cd/20/bdcd20f5411ee5785889542d303ad4cb.png" width="150">
 <div class="pokemon-list">
-    <app-pokemon-card *ngFor="let pokemon of pokemons; index as i" [pokemon]="pokemon" [numero]="i +1">
+    <app-pokemon-card *ngFor="let pokemon of pokemonService.pokemons; index as i" [pokemon]="pokemon.name"
+        [numero]="i + 1">
     </app-pokemon-card>
 </div>
